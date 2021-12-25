@@ -1,6 +1,13 @@
 <html>
     <head>
         <style>
+            body {
+                font-family: 'PT Sans', sans-serif;
+                margin: 0;
+            }
+            .title {
+                font-size: 100px;
+            }
             .cover {
                 width: 100%;
                 height: 100%;
@@ -9,14 +16,53 @@
                 justify-content: center;
                 flex-direction: column;
             }
+            .button-container {
+                display: flex;
+            }
+            .button-container a {
+                margin: 5px;
+            }
+            button {
+                border-radius: 6px;
+                font-family: 'PT Sans', sans-serif;
+                font-weight: bold;
+                padding: 8px;
+                width: 100px;
+            }
+            button:hover {
+                cursor: pointer;
+            }
+            button.button-tech {
+                background-color: #001D3D;
+                border: 1px solid #001D3D;
+                color: #2CDA9D;
+            }
+            button.button-tech:hover {
+                background-color: #2CDA9D;
+                border: 1px solid #001D3D;
+                color: #001D3D;   
+                cursor: pointer;
+            }
+            button.button-art {
+                background-color: #fad2e1;
+                border: 1px solid #fad2e1;
+                color: #634B66;
+            }
+            button.button-art:hover {
+                background-color: #634B66;
+                border: 1px solid #634B66;
+                color: #fad2e1;   
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
         <div class='cover'>
-            <h1>TIFFANY QI</h1>
-            <div class='split'>
-                <button>Tech</button>
-                <button>Art</button>                
+            <div class='background'></div>
+            <div class='title'>TIFFANY QI</div>
+            <div class='button-container'>
+                <a href='tech.html'><button class='button-tech'>Tech</button></a>
+                <a href='art.html'><button class='button-art'>Art</button></a>
             </div>
         </div>
     </body>

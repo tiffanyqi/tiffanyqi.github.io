@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: 'PT Sans', sans-serif;
+                line-height: 1.6;
+            }
+            .body-container {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+            .body-description {
+                margin-top: 25px;
+            }
+            .navigation {
+                background-color: white;
+                display: flex;
+                justify-content: end;
+                padding: 8px;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .nav-item {
+                padding: 0 20px;
+            }
+            .section-container {
+                color: #3F95CA;
+                margin: 20px 50px 100px 20px;
+                max-width: 600px;
+            }
+            .section-container.header {
+                align-items: center;
+                color: #634B66;
+                display: flex;
+                flex-direction: column;
+            }
+            .section-container.header .header-title {
+                font-size: 100px;
+            }
+            .filter-buttons {
+                margin-bottom: 20px;
+            }
+            button {
+                background-color: #634B66;
+                border: 1px solid #634B66;
+                border-radius: 6px;
+                color: #fad2e1;
+                font-family: 'PT Sans', sans-serif;
+                padding: 8px;
+            }
+            button:hover, .active-button {
+                background-color: #fad2e1;
+                border: 1px solid #fad2e1;
+                color: #634B66;  
+                cursor: pointer;
+            }
+            img {
+                cursor: pointer;
+                height: 400px;
+                margin: 8px;
+            }
+            a {
+                color: #fad2e1;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .modal {
+                background-color: black;
+                border: 4px solid #634B66;
+                border-radius: 6px;
+                height: 90%;
+                padding: 16px;
+                position: fixed;
+                width: 90%;
+            }
+            .modal-content {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+            }
+            button.close-modal {
+                background-color: transparent;
+                border: none;
+                color: #634B66;
+                position: absolute;
+                right: 16px;
+                top: 8px;
+            }
+            .hidden {
+                display: none;
+            }
+        </style>
+        <link ref='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic', rel='stylesheet', type='text/css')>
+    </head>
+    <body>
+        <div class='body-container'>
+            <div class='navigation'>
+                <div class='nav-item' style='flex-grow: 1'>Polyffany</div>
+                <div class='nav-item'>
+                    <a class='contact-button' target="_blank" href='mailto:tiffany19qi@gmail.com'>Email</a>
+                </div>
+                <div class='nav-item'>
+                    <a class='contact-button' target="_blank" href='https://www.etsy.com/shop/PolyffanyArtShop'>Etsy</a>
+                </div>
+                <div class='nav-item'>
+                    <a class='contact-button' target="_blank" href='https://instagram.com/polyffany'>Instagram</a>
+                </div>
+            </div>
+            <div class='section-container header'>
+                <div class='header-title'>POLYFFANY</div>
+                <div class='body-description'>Polyffany is an artist with a wide variety of interests such as contortion, baking, aerial silks, and watercolor. Currently, she's focusing on creating motivational and inspirational circus pieces and increasing her strength and flexibility.</div>
+                <div class='body-description'>Available for commissions or collaborations. Please reach out via Instagram for your specific inquiry.</div>
+            </div>
+            <div class='filter-buttons'>
+                <button class='aerial'>Aerial</button>
+                <button class='contortion'>Contortion</button>
+                <button class='baking'>Baking</button>
+                <button class='food-art'>Food Art</button>
+                <button class='traditional-art'>Traditional Art</button>
+                <button class='clear'>Clear</button>
+            </div>
+            <div class='portoflio'>
+                <img class='contortion' src='assets/contortion-performance.jpg'>
+                <img class='traditional-art' src='assets/comic-age.png'>
+                <img class='baking' src='assets/homemade-five-full.jpg'>
+                <img class='aerial' src='assets/aerials-rebecca.jpg'>
+                <img class='food-art' src='assets/art-food-dill.jpg'>
+                <img class='contortion' src='assets/contortion-scale.PNG'>
+                <img class='traditional-art' src='assets/art-potatoes.png'>
+                <img class='aerial' src='assets/aerials-hands.jpg'>
+                <img class='food-art' src='assets/art-food-flour.jpg'>
+                <img class='baking' src='assets/homemade-chiffon-slice.jpg'>
+                <img class='contortion' src='assets/contortion-artsy.png'>
+                <img class='traditional-art' src='assets/comic-background.png'>
+                <img class='aerial' src='assets/aerials-scorpion-2.jpg'>
+                <img class='food-art' src='assets/art-food-cornbread.jpg'>
+                <img class='baking' src='assets/homemade-choco-chip.jpg'>
+                <img class='contortion' src='assets/contortion-mountain.png'>
+                <img class='traditional-art' src='assets/art-kiki.jpg'>
+                <img class='aerial' src='assets/aerials-smile.jpg'>
+                <img class='food-art' src='assets/art-petunia.jpg'>
+                <img class='baking' src='assets/homemade-psyduck-cake.jpeg'>
+                <img class='traditional-art' src='assets/comic-performing.png'>
+                <img class='contortion' src='assets/contortion-pretzel.jpg'>
+                <img class='aerial' src='assets/aerials-dancer.png'>
+                <img class='food-art' src='assets/art-food-apple.jpg'>
+                <img class='baking' src='assets/homemade-portuguese-egg-tarts-2.jpg'>
+                <img class='contortion' src='assets/contortion-needle.png'>
+                <img class='traditional-art' src='assets/art-ghibli-chihiro.jpg'>
+                <img class='aerial' src='assets/aerials-split.jpg'>
+                <img class='food-art' src='assets/art-food-candycane.jpg'>
+                <img class='baking' src='assets/homemade-sourdough.jpg'>
+                <img class='contortion' src='assets/contortion-toronto-splits.jpg'>
+                <img class='traditional-art' src='assets/comic-still.png'>
+                <img class='aerial' src='assets/aerials-toss.jpg'>
+                <img class='food-art' src='assets/art-food-ginger.jpg'>
+                <img class='baking' src='assets/homemade-rolls-side.jpeg'>
+                <img class='contortion' src='assets/contortion-spiral.jpg'>
+                <img class='traditional-art' src='assets/art-ghibli-sophie.jpg'>
+                <img class='aerial' src='assets/aerials-peak.jpg'>
+                <img class='food-art' src='assets/art-food-marshmallows.jpg'>
+                <img class='baking' src='assets/homemade-macaron.jpg'>
+                <img class='traditional-art' src='assets/comic-worth.png'>
+                <img class='aerial' src='assets/aerials-half-moon.jpg'>
+                <img class='food-art' src='assets/art-food-melon.jpg'>
+                <img class='food-art' src='assets/art-rose.jpg'>
+                <img class='baking' src='assets/homemade-mooncakes.png'>
+                <img class='traditional-art' src='assets/art-yukon.png'>
+                <img class='aerial' src='assets/aerials-monochrome-splits.jpg'>
+                <img class='food-art' src='assets/art-food-onion.jpg'>
+
+            </div>
+            <div class='modal hidden'>
+                <button class='close-modal'>x</button>
+                <div class='modal-content'>
+                    <img style="height: 98%; width: auto">
+                </div>
+            </div>
+        </div>
+        <script>
+            let selectedCategories = [];
+            let imageFocused = false;
+
+            // clicking on an image 
+            document.querySelectorAll('img').forEach(image => image.addEventListener('click', function(ev) {
+                imageFocused = !imageFocused;
+                const modalEl = document.querySelector(`.modal`);
+                if (imageFocused) {
+                    const srcImage = ev.target.currentSrc;
+                    modalEl.querySelector(`.modal-content img`).src = srcImage;
+                    modalEl.classList.remove(`hidden`);
+                } else {
+                    modalEl.classList.add(`hidden`);
+                }
+            }));
+
+            // close the modal when selected
+            document.querySelector(`.close-modal`).addEventListener(`click`, function (ev) {
+                const modalEl = document.querySelector(`.modal`);
+                modalEl.classList.add(`hidden`);
+                imageFocused = false;
+            });
+
+            // click on button shows specific images
+            document.querySelectorAll('.filter-buttons button').forEach(btn => btn.addEventListener('click', function(ev) {
+                const selectedCategory = ev.target.classList[0];
+
+                if (selectedCategory === `clear`) {
+                    selectedCategories = [];
+                    document.querySelectorAll(`img`).forEach(image => image.classList.remove(`hidden`));
+                    document.querySelectorAll(`button`).forEach(btn => btn.classList.remove(`active-button`));
+                } else {
+                    // determine whether we are adding or removing
+                    if (selectedCategories.includes(selectedCategory)) {
+                        const index = selectedCategories.indexOf(selectedCategory);
+                        if (index > -1) {
+                            selectedCategories.splice(index, 1);
+                            ev.target.classList.remove(`active-button`);
+                        }
+                    } else {
+                        selectedCategories.push(selectedCategory);
+                        ev.target.classList.add(`active-button`);
+                    }
+                    if (selectedCategories.length > 0) {
+                        document.querySelectorAll(`img`).forEach(image => {
+                            if (selectedCategories.includes(image.classList[0])) {
+                                image.classList.remove(`hidden`);
+                            } else {
+                                image.classList.add(`hidden`);
+                            }
+                        });
+                    } else {
+                        document.querySelectorAll(`img`).forEach(image => image.classList.remove(`hidden`));
+                        document.querySelectorAll(`button`).forEach(btn => btn.classList.remove(`active-button`));
+                    }
+                }
+            }));
+        </script>
+    </body>
+</html>

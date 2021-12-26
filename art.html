@@ -1,5 +1,6 @@
 <html>
     <head>
+        <title>Polyffany</title>
         <style>
             body {
                 font-family: 'PT Sans', sans-serif;
@@ -94,6 +95,8 @@
                 display: none;
             }
         </style>
+        <script type="text/javascript" src="assets/js/mixpanel.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
         <link ref='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic', rel='stylesheet', type='text/css')>
     </head>
     <body>
@@ -124,54 +127,54 @@
                 <button class='clear'>Clear</button>
             </div>
             <div class='portoflio'>
-                <img class='contortion' src='assets/contortion-performance.jpg'>
-                <img class='traditional-art' src='assets/comic-age.png'>
-                <img class='baking' src='assets/homemade-five-full.jpg'>
-                <img class='aerial' src='assets/aerials-rebecca.jpg'>
-                <img class='food-art' src='assets/art-food-dill.jpg'>
-                <img class='contortion' src='assets/contortion-scale.PNG'>
-                <img class='traditional-art' src='assets/art-potatoes.png'>
-                <img class='aerial' src='assets/aerials-hands.jpg'>
-                <img class='food-art' src='assets/art-food-flour.jpg'>
-                <img class='baking' src='assets/homemade-chiffon-slice.jpg'>
-                <img class='contortion' src='assets/contortion-artsy.png'>
-                <img class='traditional-art' src='assets/comic-background.png'>
-                <img class='aerial' src='assets/aerials-scorpion-2.jpg'>
-                <img class='food-art' src='assets/art-food-cornbread.jpg'>
-                <img class='baking' src='assets/homemade-choco-chip.jpg'>
-                <img class='contortion' src='assets/contortion-mountain.png'>
-                <img class='traditional-art' src='assets/art-kiki.jpg'>
-                <img class='aerial' src='assets/aerials-smile.jpg'>
-                <img class='food-art' src='assets/art-petunia.jpg'>
-                <img class='baking' src='assets/homemade-psyduck-cake.jpeg'>
-                <img class='traditional-art' src='assets/comic-performing.png'>
-                <img class='contortion' src='assets/contortion-pretzel.jpg'>
-                <img class='aerial' src='assets/aerials-dancer.png'>
-                <img class='food-art' src='assets/art-food-apple.jpg'>
-                <img class='baking' src='assets/homemade-portuguese-egg-tarts-2.jpg'>
-                <img class='contortion' src='assets/contortion-needle.png'>
-                <img class='traditional-art' src='assets/art-ghibli-chihiro.jpg'>
-                <img class='aerial' src='assets/aerials-split.jpg'>
-                <img class='food-art' src='assets/art-food-candycane.jpg'>
-                <img class='baking' src='assets/homemade-sourdough.jpg'>
-                <img class='contortion' src='assets/contortion-toronto-splits.jpg'>
-                <img class='traditional-art' src='assets/comic-still.png'>
-                <img class='aerial' src='assets/aerials-toss.jpg'>
-                <img class='food-art' src='assets/art-food-ginger.jpg'>
-                <img class='baking' src='assets/homemade-rolls-side.jpeg'>
-                <img class='contortion' src='assets/contortion-spiral.jpg'>
-                <img class='traditional-art' src='assets/art-ghibli-sophie.jpg'>
-                <img class='aerial' src='assets/aerials-peak.jpg'>
-                <img class='food-art' src='assets/art-food-marshmallows.jpg'>
-                <img class='baking' src='assets/homemade-macaron.jpg'>
-                <img class='traditional-art' src='assets/comic-worth.png'>
-                <img class='aerial' src='assets/aerials-half-moon.jpg'>
-                <img class='food-art' src='assets/art-food-melon.jpg'>
-                <img class='food-art' src='assets/art-rose.jpg'>
-                <img class='baking' src='assets/homemade-mooncakes.png'>
-                <img class='traditional-art' src='assets/art-yukon.png'>
-                <img class='aerial' src='assets/aerials-monochrome-splits.jpg'>
-                <img class='food-art' src='assets/art-food-onion.jpg'>
+                <img class='contortion' src='assets/img/contortion-performance.jpg'>
+                <img class='traditional-art' src='assets/img/comic-age.png'>
+                <img class='baking' src='assets/img/homemade-five-full.jpg'>
+                <img class='aerial' src='assets/img/aerials-rebecca.jpg'>
+                <img class='food-art' src='assets/img/art-food-dill.jpg'>
+                <img class='contortion' src='assets/img/contortion-scale.PNG'>
+                <img class='traditional-art' src='assets/img/art-potatoes.png'>
+                <img class='aerial' src='assets/img/aerials-hands.jpg'>
+                <img class='food-art' src='assets/img/art-food-flour.jpg'>
+                <img class='baking' src='assets/img/homemade-chiffon-slice.jpg'>
+                <img class='contortion' src='assets/img/contortion-artsy.png'>
+                <img class='traditional-art' src='assets/img/comic-background.png'>
+                <img class='aerial' src='assets/img/aerials-scorpion-2.jpg'>
+                <img class='food-art' src='assets/img/art-food-cornbread.jpg'>
+                <img class='baking' src='assets/img/homemade-choco-chip.jpg'>
+                <img class='contortion' src='assets/img/contortion-mountain.png'>
+                <img class='traditional-art' src='assets/img/art-kiki.jpg'>
+                <img class='aerial' src='assets/img/aerials-smile.jpg'>
+                <img class='food-art' src='assets/img/art-petunia.jpg'>
+                <img class='baking' src='assets/img/homemade-psyduck-cake.jpeg'>
+                <img class='traditional-art' src='assets/img/comic-performing.png'>
+                <img class='contortion' src='assets/img/contortion-pretzel.jpg'>
+                <img class='aerial' src='assets/img/aerials-dancer.png'>
+                <img class='food-art' src='assets/img/art-food-apple.jpg'>
+                <img class='baking' src='assets/img/homemade-portuguese-egg-tarts-2.jpg'>
+                <img class='contortion' src='assets/img/contortion-needle.png'>
+                <img class='traditional-art' src='assets/img/art-ghibli-chihiro.jpg'>
+                <img class='aerial' src='assets/img/aerials-split.jpg'>
+                <img class='food-art' src='assets/img/art-food-candycane.jpg'>
+                <img class='baking' src='assets/img/homemade-sourdough.jpg'>
+                <img class='contortion' src='assets/img/contortion-toronto-splits.jpg'>
+                <img class='traditional-art' src='assets/img/comic-still.png'>
+                <img class='aerial' src='assets/img/aerials-toss.jpg'>
+                <img class='food-art' src='assets/img/art-food-ginger.jpg'>
+                <img class='baking' src='assets/img/homemade-rolls-side.jpeg'>
+                <img class='contortion' src='assets/img/contortion-spiral.jpg'>
+                <img class='traditional-art' src='assets/img/art-ghibli-sophie.jpg'>
+                <img class='aerial' src='assets/img/aerials-peak.jpg'>
+                <img class='food-art' src='assets/img/art-food-marshmallows.jpg'>
+                <img class='baking' src='assets/img/homemade-macaron.jpg'>
+                <img class='traditional-art' src='assets/img/comic-worth.png'>
+                <img class='aerial' src='assets/img/aerials-half-moon.jpg'>
+                <img class='food-art' src='assets/img/art-food-melon.jpg'>
+                <img class='food-art' src='assets/img/art-rose.jpg'>
+                <img class='baking' src='assets/img/homemade-mooncakes.png'>
+                <img class='traditional-art' src='assets/img/art-yukon.png'>
+                <img class='aerial' src='assets/img/aerials-monochrome-splits.jpg'>
+                <img class='food-art' src='assets/img/art-food-onion.jpg'>
 
             </div>
             <div class='modal hidden'>
@@ -182,6 +185,7 @@
             </div>
         </div>
         <script>
+            trackPageView(`Art`);
             let selectedCategories = [];
             let imageFocused = false;
 

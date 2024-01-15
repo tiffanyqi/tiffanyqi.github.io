@@ -6,7 +6,8 @@ export const metadata: Metadata = {
   description: "Tiffany Qi's personal website",
 };
 
-export default function Page() {
+// migrated from old vanilla page
+export default function IndexPage() {
   return (
     <div className="body-container">
       <div className="section-container header">

@@ -1,14 +1,15 @@
-h1 {
+.title {
   color: white;
 }
-body {
+.container {
   background: black;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   margin: 0;
 }
 
-.css-art-mini-container {
+.rollsContainer {
   align-items: center;
+  background: white;
   border: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -18,11 +19,7 @@ body {
   text-align: center;
 }
 
-.css-art-mini-container.sweet-rolls {
-  background: white;
-}
-
-.css-art-roll-container {
+.rollContainer {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -31,29 +28,29 @@ body {
   width: 200px;
 }
 
-.css-art-title {
+.artTitle {
   padding: 20px;
 }
 
 /* sweet rolls */
-.sweet-roll {
+.sweetRoll {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.sweet-roll .swirl {
+.sweetRoll .swirl {
   border: 5px solid black;
   position: absolute;
   z-index: 2;
 }
 
-.sweet-roll .swirl-colored {
+.sweetRoll .swirlColored {
   border: 19px solid black;
   position: absolute;
 }
 
-.sweet-roll .smoother {
+.sweetRoll .smoother {
   border-radius: 7px;
   height: 19px;
   margin-left: 10px;
@@ -62,7 +59,7 @@ body {
   width: 19px;
 }
 
-.sweet-roll .dot {
+.sweetRoll .dot {
   border-radius: 2px;
   height: 3px;
   width: 3px;
@@ -70,20 +67,20 @@ body {
   z-index: 3;
 }
 
-.sweet-roll .chunk {
+.sweetRoll .chunk {
   border-radius: 3px;
   height: 7px;
   width: 7px;
 }
 
-.sweet-roll .swirl-tiny {
+.sweetRoll .swirlTiny {
   border-bottom-left-radius: 23px;
   border-right: 0px;
   border-top-left-radius: 22px;
   height: 5px;
   width: 5px;
 }
-.sweet-roll .swirl-smallest {
+.sweetRoll .swirlSmallest {
   border-bottom-right-radius: 34px;
   border-left: 0px;
   border-top-right-radius: 29px;
@@ -92,7 +89,7 @@ body {
   margin-top: 27px;
   width: 25px;
 }
-.sweet-roll .swirl-middlest {
+.sweetRoll .swirlMiddlest {
   border-bottom-left-radius: 44px;
   border-right: 0px;
   border-top-left-radius: 50px;
@@ -101,7 +98,7 @@ body {
   margin-top: -1px;
   width: 30px;
 }
-.sweet-roll .swirl-largest {
+.sweetRoll .swirlLargest {
   border-bottom-right-radius: 83px;
   border-left: 0px;
   border-top-right-radius: 66px;
@@ -111,42 +108,46 @@ body {
   width: 56px;
 }
 
-.sweet-roll .swirl-colored.swirl-tiny {
+.sweetRoll .swirlColored.swirlTiny {
   margin-left: -13px;
 }
-.sweet-roll .swirl-colored.swirl-smallest {
+.sweetRoll .swirlColored.swirlSmallest {
   margin-left: 48px;
 }
-.sweet-roll .swirl-colored.swirl-middlest {
+.sweetRoll .swirlColored.swirlMiddlest {
   margin-left: -45px;
 }
-.sweet-roll .swirl-colored.swirl-largest {
+.sweetRoll .swirlColored.swirlLargest {
   margin-left: 78px;
 }
 
-.sweet-roll .dot:nth-child(1) {
+.sweetRoll .dot:nth-child(1) {
   margin-left: 64px;
   margin-top: 5px;
 }
-.sweet-roll .dot:nth-child(2) {
+.sweetRoll .dot:nth-child(2) {
   margin-left: -62px;
   margin-top: -41px;
 }
-.sweet-roll .dot:nth-child(3) {
+.sweetRoll .dot:nth-child(3) {
   margin-left: 69px;
   margin-top: 21px;
 }
-.sweet-roll .dot:nth-child(4) {
+.sweetRoll .dot:nth-child(4) {
   margin-left: -72px;
   margin-top: 5px;
 }
-.sweet-roll .dot:nth-child(5) {
+.sweetRoll .dot:nth-child(5) {
   margin-left: -5px;
   margin-top: -79px;
 }
 
-.sweet-roll .swirl-outline {
-  background: radial-gradient(circle, rgba(240,172,80,1) 54%, rgba(96,45,18,1) 100%);
+.sweetRoll .swirlOutline {
+  background: radial-gradient(
+    circle,
+    rgba(240, 172, 80, 1) 54%,
+    rgba(96, 45, 18, 1) 100%
+  );
   border: 3px solid black;
   border-radius: 60px;
   height: 125px;
@@ -156,37 +157,37 @@ body {
 }
 
 /* sweet roll specifications */
-.almond-tofu .swirl-colored {
+.almondTofu .swirlColored {
   border-color: #fff2cc;
 }
-.almond-tofu .smoother {
+.almondTofu .smoother {
   background: #fff2cc;
 }
-.almond-tofu .dot {
+.almondTofu .dot {
   background: #ff9980;
 }
 
-.black-sesame .swirl-colored {
+.blackSesame .swirlColored {
   border-color: #34374a;
 }
-.black-sesame .smoother {
+.blackSesame .smoother {
   background: #34374a;
 }
-.black-sesame .dot {
+.blackSesame .dot {
   background: black;
 }
 
-.char-siu .swirl-colored {
+.charSiu .swirlColored {
   border-color: #7e0806;
 }
-.char-siu .smoother {
+.charSiu .smoother {
   background: #7e0806;
 }
-.char-siu .dot {
+.charSiu .dot {
   background: #c1421c;
 }
 
-.chocolate .swirl-colored {
+.chocolate .swirlColored {
   border-color: #472b30;
 }
 .chocolate .smoother {
@@ -196,31 +197,31 @@ body {
   background: white;
 }
 
-.cinnamon .swirl-colored {
+.cinnamon .swirlColored {
   border-color: #602d12;
 }
 .cinnamon .smoother {
   background: #602d12;
 }
 
-.coconut-peanut .swirl-colored {
+.coconutPeanut .swirlColored {
   border-color: #a17141;
 }
-.coconut-peanut .smoother {
+.coconutPeanut .smoother {
   background: #a17141;
 }
-.coconut-peanut .dot {
+.coconutPeanut .dot {
   background: white;
 }
 
-.egg-tart .swirl-colored {
+.eggTart .swirlColored {
   border-color: #ffcc00;
 }
-.egg-tart .smoother {
+.eggTart .smoother {
   background: #ffcc00;
 }
 
-.egg-yolk .swirl-colored {
+.egg-yolk .swirlColored {
   border-color: orange;
 }
 .egg-yolk .smoother {
@@ -230,65 +231,65 @@ body {
   background: white;
 }
 
-.eight-treasure .swirl-colored {
+.eightTreasure .swirlColored {
   border-color: #7a2312;
 }
-.eight-treasure .smoother {
+.eightTreasure .smoother {
   background: #7a2312;
 }
-.eight-treasure .dot {
+.eightTreasure .dot {
   background: #b38600;
   border: 1px solid #806000;
 }
 
-.lotus-egg-yolk .swirl-colored {
-  border-color :#773914;
+.lotusEggYolk .swirlColored {
+  border-color: #773914;
 }
-.lotus-egg-yolk .smoother {
+.lotusEggYolk .smoother {
   background: #773914;
 }
-.lotus-egg-yolk .dot {
+.lotusEggYolk .dot {
   background: #ea601c;
 }
 
-.lychee .swirl-colored {
+.lychee .swirlColored {
   border-color: #edeeee;
 }
 .lychee .smoother {
   background: #edeeee;
 }
 
-.mango-pudding .swirl-colored {
+.mangoPudding .swirlColored {
   border-color: #ffb84d;
 }
-.mango-pudding .smoother {
+.mangoPudding .smoother {
   background: #ffb84d;
 }
-.mango-pudding .dot {
+.mangoPudding .dot {
   background: orange;
 }
 
-.milk-tea .swirl-colored {
+.milkTea .swirlColored {
   border-color: #c09252;
 }
-.milk-tea .smoother {
+.milkTea .smoother {
   background: #c09252;
 }
-.milk-tea .dot {
+.milkTea .dot {
   background: #282929;
 }
 
-.mung-bean .swirl-colored {
+.mungBean .swirlColored {
   border-color: #6c6534;
 }
-.mung-bean .smoother {
+.mungBean .smoother {
   background: #6c6534;
 }
-.mung-bean .dot {
+.mungBean .dot {
   background: #b9b953;
 }
 
-.osmanthus .swirl-colored {
+.osmanthus .swirlColored {
   border-color: #feb412;
 }
 .osmanthus .smoother {
@@ -298,12 +299,12 @@ body {
   background: #8a6841;
 }
 
-.sweet-rice .swirl-colored {
+.sweetRice .swirlColored {
   border-color: #e9e4d3;
 }
-.sweet-rice .smoother {
+.sweetRice .smoother {
   background: #e9e4d3;
 }
-.sweet-rice .dot {
+.sweetRice .dot {
   background: white;
 }

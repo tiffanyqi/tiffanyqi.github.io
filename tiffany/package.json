@@ -1,7 +1,7 @@
 {
   "name": "tiffany",
   "version": "0.1.0",
-  "homepage": "https://tiffanyqi.github.io/home",
+  "homepage": "https://tiffanyqi.github.io",
   "private": true,
   "scripts": {
     "dev": "next dev",

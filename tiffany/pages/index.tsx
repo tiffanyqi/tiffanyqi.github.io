@@ -13,13 +13,15 @@ export default function IndexPage() {
       <div className="section-container header">
         <div className="header-title">TIFFANY QI</div>
         <div className="body-description">
-          Hi! I'm a fullstack engineer with a track record of getting things
-          done. Currently focusing on providing delightful user experiences at{" "}
+          Hi! Iʼm a fullstack engineer with a track record of getting things
+          done. Currently focusing on providing delightful user experiences at
+          {` `}
           <a href="https://www.mixpanel.com">Mixpanel</a>. Incessant data
-          collector and organizational wizard. Was top on{" "}
+          collector and organizational wizard. Was top on{` `}
           <a href="https://news.ycombinator.com/front?day=2017-01-28">
             Hacker News
-          </a>{" "}
+          </a>
+          {` `}
           once.
         </div>
       </div>
@@ -27,12 +29,12 @@ export default function IndexPage() {
       <div className="section-container">
         <h2>About</h2>
         <p>
-          I'll say it straight, my path to engineering was not a conventional
-          one. I began halfway through college at{" "}
+          Iʼll say it straight, my path to engineering was not a conventional
+          one. I began halfway through college at{` `}
           <a href="https://www.berkeley.edu/">UC Berkeley</a> in 2014 simply
           curious about computer science. The intro class was really hard, but
           somehow I persevered, and became close with my computer science peers
-          who understood the struggle. From there we created{" "}
+          who understood the struggle. From there we created{` `}
           <a href="https://csmentors.berkeley.edu/">Computer Science Mentors</a>
           , a team of 100+ amazing volunteers furthering supporting the Computer
           Science department through tutoring and mentorship when the class
@@ -40,7 +42,7 @@ export default function IndexPage() {
           and that was only the start of what was to come.
         </p>
         <p>
-          It wasn't until 2017 when I joined{" "}
+          It wasnʼt until 2017 when I joined{` `}
           <a href="https://www.mixpanel.com">Mixpanel</a> as a support engineer
           that I realized all of my life I just wanted to build and create
           things with my own two hands. Ever since I set foot at Mixpanel, all I
@@ -49,15 +51,15 @@ export default function IndexPage() {
           path to engineering in 2018.
         </p>
         <p>
-          If you give something to build, I'll go and do it to the end. I enjoy
+          If you give something to build, Iʼll go and do it to the end. I enjoy
           filling the possible gaps in teams, and often take the role of
           impromptu lead simply through my extensive knowledge in what everyone
           is currently working on in the project and communicating obstacles and
-          progress clearly. And while not flattering, I'm good at the glue work
+          progress clearly. And while not flattering, Iʼm good at the glue work
           necessary to take the project to completion.
         </p>
         <p>
-          Unfortunately, I'm not your standard developer who has been tinkering
+          Unfortunately, Iʼm not your standard developer who has been tinkering
           away on their PC creating games ever since they were 12. However, I
           bet my unconventional background, drive for completion, and role
           flexibility might surprise you just a bit.
@@ -115,10 +117,10 @@ export default function IndexPage() {
           <div className="portfolio-box-description">
             Delight customers with magic by solving challenging technical
             problems and empower users to learn from and develop actionable
-            insights from their own data. Some of the projects I've done:
+            insights from their own data. Some of the projects Iʼve done:
             <ul>
               <li>
-                <strong>Onboarding app.</strong> Support's training guide during
+                <strong>Onboarding app.</strong> Supportʼs training guide during
                 the onboarding process that shows their calendar, their
                 milestones, and extra notes about a training using Javascript
                 and Django
@@ -134,7 +136,7 @@ export default function IndexPage() {
         </div>
         <div className="portfolio-box">
           <div className="portfolio-box-title">
-            Software Engineering Intern, Student Information Systems,{" "}
+            Software Engineering Intern, Student Information Systems,{` `}
             <a href="https://www.berkeley.edu/">UC Berkeley</a>
           </div>
           <div className="portfolio-box-date">Jun 2016 - Oct 2016</div>
@@ -143,7 +145,7 @@ export default function IndexPage() {
             Rails. I spearheaded the final exam schedule card feature, which was
             finally released in 2018. Also ideated an internal tool for
             management to track and communicate Cal Central changes to all users
-            and stakeholders.{" "}
+            and stakeholders.{` `}
           </div>
         </div>
       </div>
@@ -174,10 +176,11 @@ export default function IndexPage() {
           <div className="portfolio-box-description">
             Analyzed my productivity and drew correlations between four years of
             time, grade, and class data at UC Berkeley. Received over 57K views
-            to date, and ranked Top 15 on{" "}
+            to date, and ranked Top 15 on{` `}
             <a href="https://news.ycombinator.com/front?day=2017-01-28">
               Hacker News
-            </a>{" "}
+            </a>
+            {` `}
             for ~5 hours (Python, Google Calendar API)
           </div>
         </div>

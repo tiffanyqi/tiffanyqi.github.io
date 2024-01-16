@@ -6,7 +6,10 @@ import style from "./CSSArt.module.scss";
 export default function CSSArt() {
   return (
     <>
-      <NextSeo title="Cinnamon Buns" description="CSS Cinnamon Buns" />
+      <NextSeo
+        title="Cinnamon Buns | Tiffany Qi"
+        description="CSS Cinnamon Buns"
+      />
       <div className={style.container}>
         <h1 id="top" className={style.title}>
           CSS Art - Cinnamon Buns

@@ -1,0 +1,80 @@
+/* Images and graphs */
+.calendar {
+  width: 100%;
+  border: 1px solid black;
+}
+.graphTall,
+.graphShort {
+  text-align: center;
+  margin: 20px auto 5px auto;
+}
+.graphTall {
+  width: 800px;
+  height: 500px;
+}
+.graphShort {
+  width: 700px;
+  height: 300px;
+}
+
+/* Nav */
+.navbar {
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  left: 20px;
+  position: fixed;
+  top: 70px;
+  width: 170px;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbarItem,
+.navbarSubItem {
+  padding-bottom: 10px;
+}
+.navbarSubItem {
+  margin-left: 10px;
+}
+.active {
+  font-weight: bold;
+}
+
+.pageContainer {
+  font-family: "Lora", serif;
+}
+.container {
+  line-height: 1.7;
+  padding: 50px 10%;
+  padding-left: 220px;
+  text-align: justify;
+}
+.date {
+  font-style: italic;
+  text-align: right;
+  width: 100%;
+}
+.heading {
+  padding-top: 20px;
+}
+// table {
+//   margin: auto;
+// }
+// td {
+//   padding: 10px;
+// }
+
+/* Phones */
+@media screen and (max-width: 680px) {
+  #navbar {
+    visibility: hidden;
+  }
+  .container {
+    padding-left: 50px;
+  }
+}

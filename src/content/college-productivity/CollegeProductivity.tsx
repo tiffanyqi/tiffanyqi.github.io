@@ -1,74 +1,80 @@
+import { clsx } from "clsx";
 import { NextSeo } from "next-seo";
 
-import style from "./CollegeProductivity.module.scss";
+import Dec15Calendar from "../../../public/img/dec15.png";
+import Oct14Calendar from "../../../public/img/oct14.png";
+
+import style from "../../theme/blog.module.scss";
 
 export default function CollegeProductivity() {
   return (
-    <>
+    <div className={style.pageContainer}>
       <NextSeo
         title="Productivity | Tiffany Qi"
         description="Correlations between Habits and Grades in College"
       />
-      <nav id="navbar">
-        <a href="#top" className="navbar-item active">
+      <nav id="navbar" className={style.navbar}>
+        <a href="#top" className={clsx(style.navbarItem, style.active)}>
           About
         </a>
-        <a href="#about-methodology" className="navbar-sub-item">
+        <a href="#about-methodology" className={style.navbarSubItem}>
           My Diary: Getting Time Data
         </a>
-        <a href="#about-terminology" className="navbar-sub-item">
+        <a href="#about-terminology" className={style.navbarSubItem}>
           Terminology
         </a>
-        <a href="#about-other" className="navbar-sub-item">
+        <a href="#about-other" className={style.navbarSubItem}>
           Other Sources of Data
         </a>
-        <a href="#time" className="navbar-item">
+        <a href="#time" className={style.navbarItem}>
           Time
         </a>
-        <a href="#time-grades" className="navbar-sub-item">
+        <a href="#time-grades" className={style.navbarSubItem}>
           My Grades
         </a>
-        <a href="#correlation" className="navbar-item">
+        <a href="#correlation" className={style.navbarItem}>
           Academic Correlation
         </a>
-        <a href="#correlation-time" className="navbar-sub-item">
+        <a href="#correlation-time" className={style.navbarSubItem}>
           Time and Grades
         </a>
-        <a href="#correlation-tests" className="navbar-sub-item">
+        <a href="#correlation-tests" className={style.navbarSubItem}>
           Tests and Grades
         </a>
-        <a href="#correlation-units" className="navbar-sub-item">
+        <a href="#correlation-units" className={style.navbarSubItem}>
           Units, Class Sizes and Grades
         </a>
-        <a href="#other-time" className="navbar-item">
+        <a href="#other-time" className={style.navbarItem}>
           Non-Academic Correlation
         </a>
-        <a href="#other-time-sleep" className="navbar-sub-item">
+        <a href="#other-time-sleep" className={style.navbarSubItem}>
           Sleep
         </a>
-        <a href="#other-time-activities" className="navbar-sub-item">
+        <a href="#other-time-activities" className={style.navbarSubItem}>
           Activities
         </a>
-        <a href="#other-time-planning" className="navbar-sub-item">
+        <a href="#other-time-planning" className={style.navbarSubItem}>
           Planning
         </a>
-        <a href="#other-time-jobs" className="navbar-sub-item">
+        <a href="#other-time-jobs" className={style.navbarSubItem}>
           Jobs
         </a>
-        <a href="#other-time-summary" className="navbar-sub-item">
+        <a href="#other-time-summary" className={style.navbarSubItem}>
           Putting it all together
         </a>
-        <a href="#deflation" className="navbar-item">
+        <a href="#deflation" className={style.navbarItem}>
           Grade Deflation
         </a>
-        <a href="#findings" className="navbar-item">
+        <a href="#findings" className={style.navbarItem}>
           Findings
         </a>
       </nav>
-      <div className="container">
+      <div className={style.container}>
         {/* <!-- ABOUT AND INTRODUCTION --> */}
-        <h1 id="top">Correlations between Habits and Grades in College</h1>
-        <div className="date">June 2016</div>
+        <h1 id="top" className={style.heading}>
+          Correlations between Habits and Grades in College
+        </h1>
+        <div className={style.date}>June 2016</div>
         <p>
           Hi there, and welcome to my Productivity Project. Since I started
           college at UC Berkeley, I have been tracking my productivity through
@@ -93,7 +99,7 @@ export default function CollegeProductivity() {
           .
         </p>
 
-        <h3>About Me</h3>
+        <h3 className={style.heading}>About Me</h3>
         <p>
           My name is Tiffany Qi, and I graduated from UC Berkeley in Sring 2016,
           studying Business Administration. I primarily took classes in the
@@ -166,7 +172,9 @@ export default function CollegeProductivity() {
           student.
         </p>
 
-        <h3 id="about-methodology">My Diary: Getting Time Data</h3>
+        <h3 id="about-methodology" className={style.heading}>
+          My Diary: Getting Time Data
+        </h3>
         <p>
           I am a Google Calendar Super User, and I am quite proud of that fact.
           Since November 2012, I have consistently logged my productive (and
@@ -180,8 +188,8 @@ export default function CollegeProductivity() {
         </p>
 
         <img
-          className="calendar"
-          src="./assets/img/work/oct14.png"
+          className={style.calendar}
+          src={Oct14Calendar.src}
           alt="October 2014"
         />
         <p>
@@ -217,12 +225,14 @@ export default function CollegeProductivity() {
           not so productive) moments.
         </p>
         <img
-          className="calendar"
-          src="./assets/img/work/dec15.png"
+          className={style.calendar}
+          src={Dec15Calendar.src}
           alt="December 2015"
         />
 
-        <h3 id="about-terminology">Terminology</h3>
+        <h3 id="about-terminology" className={style.heading}>
+          Terminology
+        </h3>
         <p>
           There are a few statistics and college terms I use throughout the
           project. I define them below in case something doesn't make sense:
@@ -264,7 +274,9 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <h3 id="about-other">Other Sources of Data</h3>
+        <h3 id="about-other" className={style.heading}>
+          Other Sources of Data
+        </h3>
         <p>
           In addition to time, I also calculate grades very closely. This is
           typically a spreadsheet with every assignment and their weights to
@@ -290,7 +302,7 @@ export default function CollegeProductivity() {
           the specific scale looks like:
         </p>
 
-        <table>
+        {/* <table>
           <tr>
             {" "}
             <td>A+ : 4.0</td> <td>B+ : 3.3</td> <td>C+ : 2.3</td>{" "}
@@ -305,7 +317,7 @@ export default function CollegeProductivity() {
             <td>A- : 3.7</td> <td>B- : 2.7</td> <td>C- : 1.7</td>{" "}
             <td>D- : 0.7</td>{" "}
           </tr>
-        </table>
+        </table> */}
 
         <p>
           We also have Pass/No Pass grades, which is not represented in the GPA.
@@ -329,11 +341,11 @@ export default function CollegeProductivity() {
         <p>Let's get started.</p>
 
         {/* <!-- OVER TIME CALCULATIONS --> */}
-        <h2 id="time">
+        <h2 id="time" className={style.heading}>
           Time: How a Student's Grades and Time Commitment Change Over Time
         </h2>
 
-        <h3>My Time</h3>
+        <h3 className={style.heading}> My Time</h3>
         <p>
           The below graph is a visual display of all the time I spent in each
           semester on HW (homework & studying outside of class), Class time, OH
@@ -345,7 +357,7 @@ export default function CollegeProductivity() {
           at my part-time job, tutoring, lab assisting, and spinning up a new
           student organization.
         </p>
-        <div className="graph-tall" id="SemTime" />
+        <div className={style.graphTall} id="SemTime" />
 
         <p>
           In terms of motivation, I peaked in Fall 2014 and tried my best to be
@@ -369,7 +381,9 @@ export default function CollegeProductivity() {
           my classes was in Spring 2013 (still a freshman in college).
         </p>
 
-        <h3 id="time-grades">My Grades</h3>
+        <h3 id="time-grades" className={style.heading}>
+          My Grades
+        </h3>
         <p>
           <em>
             Note: these graphs related to grades show up occasionally. If one or
@@ -378,7 +392,7 @@ export default function CollegeProductivity() {
           </em>
         </p>
 
-        <div className="graph-short" id="SemVCumulative" />
+        <div className={style.graphShort} id="SemVCumulative" />
         <p>
           This graph compares my semester and cumulative GPAs. Over time, it
           appears that my GPA fell pretty consistently until my final semester.
@@ -387,7 +401,7 @@ export default function CollegeProductivity() {
           letter grade, which is reflected in the below graph.
         </p>
 
-        <div className="graph-short" id="UnitsVGPA" />
+        <div className={style.graphShort} id="UnitsVGPA" />
         <p>
           In this graph, I show how many units and what my Semester GPA is like
           over time. I included P/NP units and divided it by 5 so that the
@@ -408,7 +422,7 @@ export default function CollegeProductivity() {
         </p>
 
         {/* <!-- CORRELATION --> */}
-        <h2 id="correlation">
+        <h2 id="correlation" className={style.heading}>
           Academic Correlation: How Everything is Connected
         </h2>
         <p>I will be covering the following correlations:</p>
@@ -420,7 +434,9 @@ export default function CollegeProductivity() {
         </ul>
         <p>Let's begin!</p>
 
-        <h3 id="correlation-time">Time & Grades</h3>
+        <h3 id="correlation-time" className={style.heading}>
+          Time & Grades
+        </h3>
         <p>
           I have had the good fortune of documenting how much time I spent going
           to class, doing homework and studying, going to office hours, and
@@ -431,7 +447,7 @@ export default function CollegeProductivity() {
           these four factors.
         </p>
 
-        <div className="graph-short" id="GradeVClass" />
+        <div className={style.graphShort} id="GradeVClass" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. time going to
@@ -458,7 +474,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="GradeVHW" />
+        <div className={style.graphShort} id="GradeVHW" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. time on homework
@@ -485,7 +501,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="GradeVOH" />
+        <div className={style.graphShort} id="GradeVOH" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. time spent going
@@ -512,7 +528,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="GradeVExtra" />
+        <div className={style.graphShort} id="GradeVExtra" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. extra time spent
@@ -554,7 +570,9 @@ export default function CollegeProductivity() {
           </strong>
         </p>
 
-        <h3 id="correlation-tests">Tests & Grades</h3>
+        <h3 id="correlation-tests" className={style.heading}>
+          Tests & Grades
+        </h3>
         <p>
           Next, I'd like to explore the relationship between test results and
           the grades received in the class. I classified "First Test" with
@@ -566,7 +584,7 @@ export default function CollegeProductivity() {
           grade? Let's see.
         </p>
 
-        <div className="graph-short" id="GradeVFirst" />
+        <div className={style.graphShort} id="GradeVFirst" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. First Test Score
@@ -592,7 +610,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="GradeVFinalGrade" />
+        <div className={style.graphShort} id="GradeVFinalGrade" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. Final Grade, with
@@ -614,7 +632,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="FirstVFinal" />
+        <div className={style.graphShort} id="FirstVFinal" />
         <ul>
           <li>
             <strong>Relationship</strong>: First Grade vs. Final Grade
@@ -640,7 +658,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="FinalVFinalTime" />
+        <div className={style.graphShort} id="FinalVFinalTime" />
         <ul>
           <li>
             <strong>Relationship</strong>: Final Test Grade vs. Time Spent on
@@ -667,7 +685,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="GradeVFinalTime" />
+        <div className={style.graphShort} id="GradeVFinalTime" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade Received vs. Time Spent on the
@@ -690,7 +708,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="GradeVFinalPercent" />
+        <div className={style.graphShort} id="GradeVFinalPercent" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade Received vs. Final Percentage
@@ -710,7 +728,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="AvGradeVFinalPercent" />
+        <div className={style.graphShort} id="AvGradeVFinalPercent" />
         <ul>
           <li>
             <strong>Relationship</strong>: Average Grade Received vs. Percentage
@@ -760,13 +778,15 @@ export default function CollegeProductivity() {
           .
         </p>
 
-        <h3 id="correlation-units">Units, Class Sizes, & Grades</h3>
+        <h3 id="correlation-units" className={style.heading}>
+          Units, Class Sizes, & Grades
+        </h3>
         <p>
           The next set of factors include how many units the class offered, and
           how big the class was in determining the final grade.
         </p>
 
-        <div className="graph-short" id="UnitsVGrade" />
+        <div className={style.graphShort} id="UnitsVGrade" />
         <ul>
           <li>
             <strong>Relationship</strong>: Units in the class vs. Grade received
@@ -782,7 +802,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="UnitsVAvGrade" />
+        <div className={style.graphShort} id="UnitsVAvGrade" />
         <ul>
           <li>
             <strong>Relationship</strong>: Units in the class vs. the average
@@ -799,7 +819,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="UnitsVAvTime" />
+        <div className={style.graphShort} id="UnitsVAvTime" />
         <ul>
           <li>
             <strong>Relationship</strong>: Units vs. the average time I spent in
@@ -828,7 +848,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="GradeVSize" />
+        <div className={style.graphShort} id="GradeVSize" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs the class size
@@ -856,7 +876,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="AvGradeVSize" />
+        <div className={style.graphShort} id="AvGradeVSize" />
         <ul>
           <li>
             <strong>Relationship</strong>: Average grade received vs the class
@@ -901,7 +921,7 @@ export default function CollegeProductivity() {
         </p>
 
         {/* <!-- OTHER TIME --> */}
-        <h2 id="other-time">
+        <h2 id="other-time" className={style.heading}>
           Other Time: Non-Academic Factors Affect Productivity and GPA
         </h2>
         <p>
@@ -917,7 +937,9 @@ export default function CollegeProductivity() {
           conclusions from sparse data.
         </p>
 
-        <h3 id="other-time-fun">Fun</h3>
+        <h3 id="other-time-fun" className={style.heading}>
+          Fun
+        </h3>
         <p>
           I calculated "fun" as time spent on my hobbies like baking or doing
           jigsaw puzzles, hanging out with friends and family, hanging out with
@@ -938,7 +960,7 @@ export default function CollegeProductivity() {
           grade, and how much time I spend on academics per semester.
         </p>
 
-        <div className="graph-short" id="SemFun" />
+        <div className={style.graphShort} id="SemFun" />
         <p>
           Here's all the time I spent on fun. I didn't start a "hobbies" or
           "fun" section in Fall 2012, which is why I do not have any data on it.
@@ -946,7 +968,7 @@ export default function CollegeProductivity() {
           sudden spike in this category from Spring 2015 to Spring 2016.
         </p>
 
-        <div className="graph-short" id="SemUnitsVFun" />
+        <div className={style.graphShort} id="SemUnitsVFun" />
         <ul>
           <li>
             <strong>Relationship</strong>: Units taken per semester vs. Time
@@ -974,7 +996,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="SemGradeVFun" />
+        <div className={style.graphShort} id="SemGradeVFun" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. time spent on fun
@@ -1001,7 +1023,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="FunVTotalAcademicTime" />
+        <div className={style.graphShort} id="FunVTotalAcademicTime" />
         <ul>
           <li>
             <strong>Relationship</strong>: How much time spent on fun vs. how
@@ -1062,16 +1084,18 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <h3 id="other-time-sleep">Sleep</h3>
+        <h3 id="other-time-sleep" className={style.heading}>
+          Sleep
+        </h3>
 
-        <div className="graph-short" id="SemSleep" />
+        <div className={style.graphShort} id="SemSleep" />
         <p>
           According to this data, I slept pretty consistently throughout each
           semester from 800 to 900 hours of sleep. Let's look into the
           specifics.
         </p>
 
-        <div className="graph-short" id="SemUnitsVSleep" />
+        <div className={style.graphShort} id="SemUnitsVSleep" />
         <ul>
           <li>
             <strong>Relationship</strong>: Units per semester vs. time slept
@@ -1091,7 +1115,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="SemGradeVSleep" />
+        <div className={style.graphShort} id="SemGradeVSleep" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. time slept
@@ -1111,7 +1135,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="SleepVTotalAcademicTime" />
+        <div className={style.graphShort} id="SleepVTotalAcademicTime" />
         <ul>
           <li>
             <strong>Relationship</strong>: Time slept vs. time spent on
@@ -1149,7 +1173,9 @@ export default function CollegeProductivity() {
           </strong>
         </p>
 
-        <h3 id="other-time-activities">Activities</h3>
+        <h3 id="other-time-activities" className={style.heading}>
+          Activities
+        </h3>
 
         <p>
           Activities were a big part of my college experience. While I classify
@@ -1158,7 +1184,7 @@ export default function CollegeProductivity() {
           as in fun and sleep.
         </p>
 
-        <div className="graph-short" id="SemActivities" />
+        <div className={style.graphShort} id="SemActivities" />
         <p>
           I've written about{" "}
           <a href="https://advicefromahaasmajor.wordpress.com/2014/08/05/my-extracurriculars-and-past-affiliations/">
@@ -1173,7 +1199,7 @@ export default function CollegeProductivity() {
           is a significant portion of my activities here.
         </p>
 
-        <div className="graph-short" id="SemUnitsVActivities" />
+        <div className={style.graphShort} id="SemUnitsVActivities" />
         <ul>
           <li>
             <strong>Relationship</strong>: Units per semester vs time spent on
@@ -1200,7 +1226,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="SemGradeVActivities" />
+        <div className={style.graphShort} id="SemGradeVActivities" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade vs time spent on activities
@@ -1226,7 +1252,7 @@ export default function CollegeProductivity() {
           </li>
         </ul>
 
-        <div className="graph-short" id="ActivitiesVTotalAcademicTime" />
+        <div className={style.graphShort} id="ActivitiesVTotalAcademicTime" />
         <ul>
           <li>
             <strong>Relationship</strong>: Time spent on activities vs. time
@@ -1267,7 +1293,9 @@ export default function CollegeProductivity() {
           favorite parts of college.
         </p>
 
-        <h3 id="other-time-planning">Planning</h3>
+        <h3 id="other-time-planning" className={style.heading}>
+          Planning
+        </h3>
 
         <p>
           I'm really big on planning. I would frequently plan out my four year
@@ -1277,7 +1305,7 @@ export default function CollegeProductivity() {
           to use this time to study more rather than to plan?
         </p>
 
-        <div className="graph-short" id="SemPlanning" />
+        <div className={style.graphShort} id="SemPlanning" />
         <p>
           As shown, I frequently spent more time planning in the beginning of my
           academic career than the end. The Fall 2012 number is actually only
@@ -1293,7 +1321,7 @@ export default function CollegeProductivity() {
           make them.
         </p>
 
-        <div className="graph-short" id="SemGradeVPlan" />
+        <div className={style.graphShort} id="SemGradeVPlan" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade vs. time spent planning
@@ -1318,7 +1346,9 @@ export default function CollegeProductivity() {
           in the clear.
         </p>
 
-        <h3 id="other-time-jobs">Jobs</h3>
+        <h3 id="other-time-jobs" className={style.heading}>
+          Jobs
+        </h3>
 
         <p>
           The potential lack of job after graduation weighed on my mind
@@ -1328,13 +1358,13 @@ export default function CollegeProductivity() {
           would like to showcase it here as well.
         </p>
 
-        <div className="graph-short" id="SemJobs" />
+        <div className={style.graphShort} id="SemJobs" />
         <p>
           Clearly I spent more time job hunting as time went on, as I felt more
           pressure to succeed.
         </p>
 
-        <div className="graph-short" id="SemGradeVJobs" />
+        <div className={style.graphShort} id="SemGradeVJobs" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade received vs. time spent on job
@@ -1360,8 +1390,10 @@ export default function CollegeProductivity() {
           the case, perhaps it's a coincidence.
         </p>
 
-        <h3 id="other-time-summary">Putting it all Together</h3>
-        <div className="graph-short" id="SemGradeVOtherTime" />
+        <h3 id="other-time-summary" className={style.heading}>
+          Putting it all Together
+        </h3>
+        <div className={style.graphShort} id="SemGradeVOtherTime" />
         <ul>
           <li>
             <strong>Relationship</strong>: Grade vs total time spent on
@@ -1400,7 +1432,9 @@ export default function CollegeProductivity() {
         </p>
 
         {/* <!-- DEFLATION --> */}
-        <h2 id="deflation">Grade Deflation: Does it Exist?</h2>
+        <h2 id="deflation" className={style.heading}>
+          Grade Deflation: Does it Exist?
+        </h2>
         <p>
           At UC Berkeley, grade deflation is a big thing that we stress over.
           The{" "}
@@ -1419,7 +1453,7 @@ export default function CollegeProductivity() {
           question, but I can provide my own data on the first one.
         </p>
 
-        <div className="graph-tall" id="GradeVPercent" />
+        <div className={style.graphTall} id="GradeVPercent" />
         <p>
           Here is a chart of all of my grades and the percentages I received
           from each grade. Some of them are estimated, but I did my best to ask
@@ -1492,7 +1526,7 @@ export default function CollegeProductivity() {
           about the combination of points that create a final product.
         </p>
 
-        <h3>Findings</h3>
+        <h3 className={style.heading}>Findings</h3>
         <p>TLDR; here are the results of my research.</p>
 
         <p>Answers to Common Questions:</p>
@@ -1607,7 +1641,7 @@ export default function CollegeProductivity() {
           can do is isolate the findings and compare them against each other.
         </p>
 
-        <h3>Concluding Remarks</h3>
+        <h3 className={style.heading}>Concluding Remarks</h3>
         {/* <!-- copied from medium --> */}
         <p>
           There are a lot of different factors at play when it comes to the
@@ -1699,6 +1733,6 @@ export default function CollegeProductivity() {
           feel free to contact me as well.
         </p>
       </div>
-    </>
+    </div>
   );
 }

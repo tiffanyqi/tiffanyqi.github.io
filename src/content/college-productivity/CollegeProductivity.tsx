@@ -302,22 +302,22 @@ export default function CollegeProductivity() {
           the specific scale looks like:
         </p>
 
-        {/* <table>
-          <tr>
-            {" "}
-            <td>A+ : 4.0</td> <td>B+ : 3.3</td> <td>C+ : 2.3</td>{" "}
-            <td>D+ : 1.3</td> <td>F</td> <td>0</td>{" "}
-          </tr>
-          <tr>
-            {" "}
-            <td>A : 4.0</td> <td>B : 3.0</td> <td>C: 2.0</td> <td>D : 1.0</td>{" "}
-          </tr>
-          <tr>
-            {" "}
-            <td>A- : 3.7</td> <td>B- : 2.7</td> <td>C- : 1.7</td>{" "}
-            <td>D- : 0.7</td>{" "}
-          </tr>
-        </table> */}
+        <table className={style.table}>
+          <th></th>
+          <tbody>
+            <tr>
+              <td>A+ : 4.0</td> <td>B+ : 3.3</td> <td>C+ : 2.3</td>
+              <td>D+ : 1.3</td> <td>F</td> <td>0</td>
+            </tr>
+            <tr>
+              <td>A : 4.0</td> <td>B : 3.0</td> <td>C: 2.0</td> <td>D : 1.0</td>
+            </tr>
+            <tr>
+              <td>A- : 3.7</td> <td>B- : 2.7</td> <td>C- : 1.7</td>
+              <td>D- : 0.7</td>
+            </tr>
+          </tbody>
+        </table>
 
         <p>
           We also have Pass/No Pass grades, which is not represented in the GPA.

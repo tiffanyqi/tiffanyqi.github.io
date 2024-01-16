@@ -62,12 +62,13 @@
 .heading {
   padding-top: 20px;
 }
-// table {
-//   margin: auto;
-// }
-// td {
-//   padding: 10px;
-// }
+.table {
+  margin: auto;
+
+  td {
+    padding: 10px;
+  }
+}
 
 /* Phones */
 @media screen and (max-width: 680px) {

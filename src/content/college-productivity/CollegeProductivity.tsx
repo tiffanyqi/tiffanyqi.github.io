@@ -1,12 +1,19 @@
 import { clsx } from "clsx";
 import { NextSeo } from "next-seo";
+import { useEffect } from "react";
 
 import Dec15Calendar from "../../../public/img/dec15.png";
 import Oct14Calendar from "../../../public/img/oct14.png";
 
 import style from "../../theme/blog.module.scss";
 
+import { loadGoogleCharts } from "./load-graphs";
+
 export default function CollegeProductivity() {
+  useEffect(() => {
+    loadGoogleCharts();
+  }, []);
+
   return (
     <div className={style.pageContainer}>
       <NextSeo
@@ -303,7 +310,6 @@ export default function CollegeProductivity() {
         </p>
 
         <table className={style.table}>
-          <th></th>
           <tbody>
             <tr>
               <td>A+ : 4.0</td> <td>B+ : 3.3</td> <td>C+ : 2.3</td>

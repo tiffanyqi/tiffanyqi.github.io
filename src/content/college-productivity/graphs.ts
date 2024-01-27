@@ -1,3 +1,13 @@
+import "../../types.d.ts";
+
+type ChartType =
+  | "AreaChart"
+  | "BubbleChart"
+  | "ColumnChart"
+  | "LineChart"
+  | "ScatterChart";
+type Options = any;
+
 /* Parameters that apply to all chart types
  * {String} containerId: id of the graph to be displayed
  * {String} dataSourceUrl: source of data
@@ -11,11 +21,11 @@ function drawChart({
   query,
   options,
 }: {
-  chartType: string;
+  chartType: ChartType;
   containerId: string;
   dataSourceUrl: string;
   query: string;
-  options: any;
+  options: Options;
 }) {
   const wrapper = new window.google.visualization.ChartWrapper({
     chartType,
@@ -33,10 +43,10 @@ function drawChart({
  * {String} vAxisTitle: title of the vertical axis
  */
 function formatOptions({
-  hAxisTitle = null,
+  hAxisTitle = ``,
   showLegend = true,
   title = ``,
-  vAxisTitle = null,
+  vAxisTitle = ``,
   specialChartOptions = {},
 }) {
   return {
@@ -57,19 +67,19 @@ function formatOptions({
  */
 export function drawAreaChart({
   containerId,
-  hAxisTitle = null,
+  hAxisTitle = ``,
   isStacked = "false",
   query,
   title,
-  vAxisTitle = null,
+  vAxisTitle = ``,
   url,
 }: {
   containerId: string;
-  hAxisTitle: string | null;
+  hAxisTitle: string;
   isStacked: "true" | "false";
   query: string;
   title: string;
-  vAxisTitle: string | null;
+  vAxisTitle: string;
   url: string;
 }) {
   const options = formatOptions({
@@ -97,19 +107,19 @@ export function drawBubbleChart({
   bubble,
   colorAxis,
   containerId,
-  hAxisTitle = null,
+  hAxisTitle = ``,
   query,
   title,
-  vAxisTitle = null,
+  vAxisTitle = ``,
   url,
 }: {
   bubble: any;
-  colorAxis: any;
-  containerId: string | null;
-  hAxisTitle: string | null;
+  colorAxis: string;
+  containerId: string;
+  hAxisTitle: string;
   query: string;
   title: string;
-  vAxisTitle: string | null;
+  vAxisTitle: string;
   url: string;
 }) {
   const options = formatOptions({
@@ -136,13 +146,22 @@ export function drawBubbleChart({
  */
 export function drawColumnChart({
   containerId,
-  hAxisTitle = null,
+  hAxisTitle = ``,
   isStacked = "false",
   query,
   showLegend = true,
   title,
   url,
-  vAxisTitle = null,
+  vAxisTitle = ``,
+}: {
+  containerId: string;
+  hAxisTitle: string;
+  isStacked?: "true" | "false";
+  query: string;
+  showLegend?: boolean;
+  title: string;
+  vAxisTitle: string;
+  url: string;
 }) {
   let options = formatOptions({
     hAxisTitle,
@@ -155,9 +174,10 @@ export function drawColumnChart({
     },
   });
   drawChart({
-    ...arguments[0],
+    containerId,
     chartType: "ColumnChart",
     dataSourceUrl: url,
+    query,
     options,
   });
 }
@@ -166,12 +186,20 @@ export function drawColumnChart({
  */
 export function drawLineChart({
   containerId,
-  hAxisTitle = null,
+  hAxisTitle = ``,
   query,
   showLegend = true,
   title,
-  vAxisTitle = null,
+  vAxisTitle = ``,
   url,
+}: {
+  containerId: string;
+  hAxisTitle?: string;
+  query: string;
+  showLegend?: boolean;
+  title?: string;
+  vAxisTitle?: string;
+  url: string;
 }) {
   const options = formatOptions({
     hAxisTitle,
@@ -183,10 +211,11 @@ export function drawLineChart({
     },
   });
   drawChart({
-    ...arguments[0],
+    containerId,
     chartType: "LineChart",
     dataSourceUrl: url,
     options,
+    query,
   });
 }
 
@@ -198,15 +227,21 @@ export function drawLineChart({
 export function drawScatterChart({
   containerId,
   extraTrendline = null,
-  hAxisTitle = null,
+  hAxisTitle = ``,
   query,
-  showR2 = "true",
   title,
-  vAxisTitle = null,
-  visibleInLegend = "true",
+  vAxisTitle = ``,
   url,
+}: {
+  containerId: string;
+  extraTrendline?: any | null;
+  hAxisTitle: string;
+  query: string;
+  title: string;
+  vAxisTitle: string;
+  url: string;
 }) {
-  let trendlines = { "0": { showR2, visibleInLegend } };
+  let trendlines = { "0": { showR2: "true", visibleInLegend: "true" } };
   if (extraTrendline) {
     trendlines = {
       ...trendlines,
@@ -222,9 +257,10 @@ export function drawScatterChart({
     },
   });
   drawChart({
-    ...arguments[0],
+    containerId,
     chartType: "ScatterChart",
     dataSourceUrl: url,
     options,
+    query,
   });
 }

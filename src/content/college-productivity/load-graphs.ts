@@ -5,7 +5,7 @@ import {
   drawScatterChart,
 } from "./graphs";
 
-// import "../../types";
+import "../../types.d.ts";
 
 const SEMESTER_DATA_URL =
   "https://docs.google.com/spreadsheets/d/18hPB3_g7A_tC4RAvK6LbLyZYf8tilpum0lSdysCawzI/edit#gid=0";

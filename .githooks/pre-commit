@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+import subprocess
+import sys
+
+def lint_files():
+    """
+    Runs 'npm run lint' to lint the code.
+
+    Returns:
+        bool: True if linting passed without errors, False otherwise.
+    """
+    try:
+        subprocess.run(['npm', 'run', 'lint'], check=True)
+        return True
+    except subprocess.CalledProcessError:
+        return False
+
+def main():
+    if not lint_files():
+        print("Linting failed. Commit aborted.")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()

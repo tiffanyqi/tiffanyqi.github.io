@@ -1,4 +1,4 @@
-import "../../types.d.ts";
+import "./types.d.ts";
 
 type ChartType =
   | "AreaChart"
@@ -75,11 +75,11 @@ export function drawAreaChart({
   url,
 }: {
   containerId: string;
-  hAxisTitle: string;
-  isStacked: "true" | "false";
+  hAxisTitle?: string;
+  isStacked: "true" | "false" | "percent" | "relative";
   query: string;
   title: string;
-  vAxisTitle: string;
+  vAxisTitle?: string;
   url: string;
 }) {
   const options = formatOptions({
@@ -155,12 +155,12 @@ export function drawColumnChart({
   vAxisTitle = ``,
 }: {
   containerId: string;
-  hAxisTitle: string;
+  hAxisTitle?: string;
   isStacked?: "true" | "false";
   query: string;
   showLegend?: boolean;
   title: string;
-  vAxisTitle: string;
+  vAxisTitle?: string;
   url: string;
 }) {
   let options = formatOptions({

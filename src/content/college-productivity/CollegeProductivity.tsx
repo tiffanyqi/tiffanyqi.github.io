@@ -86,7 +86,7 @@ export default function CollegeProductivity() {
           Hi there, and welcome to my Productivity Project. Since I started
           college at UC Berkeley, I have been tracking my productivity through
           Google Calendar, then migrating the data onto a spreadsheet through a
-          calculator application I built called{}
+          calculator application I built called{` `}
           <a href="https://github.com/tiffanyqi/calenTools">CalenTools</a> for
           the command line. With this information, I thought it would be fun to
           take all this data, analyze it, and make some conclusions about how
@@ -94,12 +94,12 @@ export default function CollegeProductivity() {
         </p>
 
         <p>
-          As such, this project is an analysis of{}
+          As such, this project is an analysis of{` `}
           <strong>one personʼs life</strong>, and should not be taken as
           absolute fact. I found this data interesting to share, and hope that
           it helps you when you think that one test can make or break your
           grade. Here is the data, and if youʼre interested in a high level
-          overview, feel free to check out my{}
+          overview, feel free to check out my{` `}
           <a href="https://medium.com/@tiffanyqi/a-college-students-individual-analysis-of-productivity-of-four-years-e51e5ec3af6">
             post
           </a>
@@ -295,7 +295,7 @@ export default function CollegeProductivity() {
         </p>
 
         <p>
-          I also have some average grades on the site as well. I went on{}
+          I also have some average grades on the site as well. I went on{` `}
           <a href="http://schedulebuilder.berkeley.edu">Schedule Builder</a>, a
           UC Berkeley resource, to find the average grade associated with my
           class and its given semester. If a particular semester wasnʼt given, I
@@ -333,7 +333,7 @@ export default function CollegeProductivity() {
         </p>
 
         <p>
-          As for units and class sizes, this information was obtained on{}
+          As for units and class sizes, this information was obtained on{` `}
           <a href="http://schedule.berkeley.edu">Schedule of Classes</a>,
           another official UC Berkeley website.
         </p>
@@ -370,10 +370,11 @@ export default function CollegeProductivity() {
           a productive member of the student body. I still donʼt know how I
           managed to spend 1000+ hours in a semester productively. For context,
           if each semester is 16 weeks long, each week having 7 days and 24
-          hours in one day, then the duration of one semester is 24 x 7 x 16 ={}
+          hours in one day, then the duration of one semester is 24 x 7 x 16 =
+          {` `}
           <strong>2,688 hours</strong> long. According to these numbers, I spent
           over <strong>40%</strong> of my time productively. I spent 30.6% of my
-          time sleeping, which is approximately 7 hours a day.{}
+          time sleeping, which is approximately 7 hours a day.{` `}
           <strong>I spent more time working than I did sleeping</strong>. To put
           this into perspective, a full time job (assuming 40 hours/week) would
           be 24% of time spent. Throughout my college career, I was productive
@@ -417,14 +418,14 @@ export default function CollegeProductivity() {
         </p>
 
         <p>
-          In conclusion,{}
+          In conclusion,{` `}
           <strong>
             my motivation peaked in Fall 2014, and fell throughout consecutive
             semesters. In addition, I spent time consistently across semesters
             on homework, and classes. I spent more time planning in the first
             half of college, and more time job hunting on the latter half.
           </strong>
-          {}
+          {` `}
           This next section will go into specific correlations.
         </p>
 
@@ -569,7 +570,7 @@ export default function CollegeProductivity() {
           order to understand the material and my grade was still lower than the
           others. Another may be because I understood the material well, and as
           a result did not go to class. Since both phenomena happened, bimodal
-          correlations wouldnʼt reflect in the data.{}
+          correlations wouldnʼt reflect in the data.{` `}
           <strong>
             Overall, there is no linear correlation between spending time in the
             class before the semester, studying, going to class, or going to
@@ -679,7 +680,7 @@ export default function CollegeProductivity() {
             <strong>R</strong>: -0.1018
           </li>
           <li>
-            <strong>R2</strong>: 0.0104{}
+            <strong>R2</strong>: 0.0104{` `}
           </li>
           <li>
             <strong>R (Outliers removed)</strong>: -0.0389
@@ -758,7 +759,7 @@ export default function CollegeProductivity() {
 
         <p>
           Phew! That was a lot of information. Essentially, it appears that just
-          as we learned in time spent vs. grade outcome,{}
+          as we learned in time spent vs. grade outcome,{` `}
           <strong>
             there is no or weak linear correlation between time spent on an exam
             vs the test and grade outcome
@@ -772,13 +773,13 @@ export default function CollegeProductivity() {
           between the first and final test scores, which seems to suggest that I
           did not improve too much between tests. In addition, there is a strong
           positive linear correlation between the grade received and the final
-          grade, which shows that the{}
+          grade, which shows that the{` `}
           <strong>
             final grade is still an extremely important factor in the final
             grade distributions
           </strong>
           . It makes sense that students continue to study a lot to do well on
-          their final. And in some sense,{}
+          their final. And in some sense,{` `}
           <strong>
             their overall grade can improve if they do well on the final
           </strong>
@@ -914,14 +915,14 @@ export default function CollegeProductivity() {
 
         <p>
           Overall, it appears that there isnʼt a correlation between units and
-          the grade received. However, it appears that the notion that{}
+          the grade received. However, it appears that the notion that{` `}
           <strong>
             students need to spend more time on a higher unit course does hold
             true, but not by too much
           </strong>
-          {}
+          {` `}
           (only a moderate positive correlation). Finally, there does appear to
-          be{}
+          be{` `}
           <strong>
             some negative impact of class size and the grade received in the
             class.
@@ -952,7 +953,8 @@ export default function CollegeProductivity() {
           I calculated ”fun” as time spent on my hobbies like baking or doing
           jigsaw puzzles, hanging out with friends and family, hanging out with
           my boyfriend, and wasting time like playing games and watching TV.
-          Each of these activities are logged in their respective calendars.{}
+          Each of these activities are logged in their respective calendars.
+          {` `}
         </p>
 
         <p>There are two questions I am interested here, and they are:</p>
@@ -1023,7 +1025,7 @@ export default function CollegeProductivity() {
             <strong>R (Relationship removed)</strong>: -0.579
           </li>
           <li>
-            <strong>R2 (Relationship removed)</strong>: 0.3352{}
+            <strong>R2 (Relationship removed)</strong>: 0.3352{` `}
           </li>
           <li>
             <strong>Conclusion</strong>: No linear correlation, relationship
@@ -1062,7 +1064,7 @@ export default function CollegeProductivity() {
         <p>In conclusion:</p>
         <ul>
           <li>
-            Does spending time unproductively result in lower results?:{}
+            Does spending time unproductively result in lower results?:{` `}
             <strong>
               While correlation does not imply causation, it does appear that
               more time on fun does lower grades in some way
@@ -1070,7 +1072,7 @@ export default function CollegeProductivity() {
             .
           </li>
           <li>
-            Does having a significant other lower productivity and grades?:{}
+            Does having a significant other lower productivity and grades?:{` `}
             <strong>
               Yes and no. When relationship data was removed, it appears to have
               strengthened the correlation between fun and academics and fun and
@@ -1081,7 +1083,7 @@ export default function CollegeProductivity() {
             times where we would work together as well.
           </li>
           <li>
-            Does ”work hard, play hard” actually hold true? Yes, and no.{}
+            Does ”work hard, play hard” actually hold true? Yes, and no.{` `}
             <strong>
               It appears that I took fewer units when I had more fun, but I also
               spent more time on fun while also spending more time on academics
@@ -1174,7 +1176,7 @@ export default function CollegeProductivity() {
           While there doesnʼt appear to be a linear correlation between how many
           units I take and how much I sleep, as well as between how much time I
           spend on academics and sleep, the grade received and how much I sleep
-          is moderately correlated.{}
+          is moderately correlated.{` `}
           <strong>
             Thus, itʼs important to sleep consistently, and it may have an
             effect on grades!
@@ -1194,13 +1196,13 @@ export default function CollegeProductivity() {
 
         <div className={style.graphShort} id="SemActivities" />
         <p>
-          Iʼve written about{}
+          Iʼve written about{` `}
           <a href="https://advicefromahaasmajor.wordpress.com/2014/08/05/my-extracurriculars-and-past-affiliations/">
             my activities before Fall 2014
           </a>
           . I also interned at Go Overseas and worked part-time at Intera Growth
           Partners. After BCEC, BMC, and Perfect Fifth, I did a lot of teaching
-          and tutoring in introductory computer science. I founded{}
+          and tutoring in introductory computer science. I founded{` `}
           <a href="csmberkeley.github.io">Computer Science Mentors</a>, an
           organization focused on group tutoring in all introductory computer
           science courses. In total, I spent 670 hours in three semesters, which
@@ -1282,7 +1284,7 @@ export default function CollegeProductivity() {
         </ul>
 
         <p>
-          Essentially, this data shows that{}
+          Essentially, this data shows that{` `}
           <strong>
             everything is strongly negatively correlated with activities
           </strong>
@@ -1432,7 +1434,7 @@ export default function CollegeProductivity() {
           Instead of isolating each piece, now Iʼm curious about whether all of
           the time I donʼt spend studying combined affects grades. with Fall
           2012 removed (because I didnʼt track for the whole period), the
-          treadline gooes in the opposite direction, suggesting{}
+          treadline gooes in the opposite direction, suggesting{` `}
           <strong>
             a weak correlation between grade earned and the collective sum of
             sleep, activities, fun, jobs, and planning.
@@ -1445,19 +1447,19 @@ export default function CollegeProductivity() {
         </h2>
         <p>
           At UC Berkeley, grade deflation is a big thing that we stress over.
-          The{}
+          The{` `}
           <a href="http://www.dailycal.org/2015/05/15/grade-deflation/">
             Daily Cal
           </a>
-          {}
+          {` `}
           wrote an article about it, and shows a graph that compares the average
           grades of Harvard, Yale, Stanford, and UC Berkeley. There, UC
           Berkeleyʼs average grade has been consistently under their
-          counterparts. Here, Iʼd like to take a different approach.{}
+          counterparts. Here, Iʼd like to take a different approach.{` `}
           <strong>
             Does Berkeley award lower grades than our percentages in the class?
           </strong>
-          {}
+          {` `}
           Are classes at Cal naturally more difficult? Or, do the other schools
           just curve everyone upwards? I canʼt speak very much to the last
           question, but I can provide my own data on the first one.
@@ -1507,7 +1509,8 @@ export default function CollegeProductivity() {
           line, which shows that in reality, many grades are given out not by
           the hard set percentage, but perhaps from the curve in the class. Yes,
           these percentages are much lower, but classes purposefully give
-          students a higher grade due to the difficulty of the class itself.{}
+          students a higher grade due to the difficulty of the class itself.
+          {` `}
           <strong>
             Perhaps there isnʼt so much of a grade deflation as we make it to
             be, as professors purposefully increase grades to accomodate this.
@@ -1518,13 +1521,13 @@ export default function CollegeProductivity() {
           One thing I want to connect to this analysis is class size. Above, I
           mention that small class sizes is one of the factors that Ivys boast
           about, and here weʼve discovered that there is a moderate negative
-          correlation between the two.{}
+          correlation between the two.{` `}
           <strong>
             Perhaps one of the reasons UC Berkeley is known for ”grade
             deflation” because the schools we are compared to are those with
             small class sizes?
           </strong>
-          {}
+          {` `}
           Just a thought.
         </p>
 
@@ -1571,7 +1574,7 @@ export default function CollegeProductivity() {
               If a class has more units, does that mean I have to spend more
               time in the class?
             </strong>
-            {}
+            {` `}
             (e.g. 4 units requires 16 hours a week of time): Thereʼs a moderate
             positive linear correlation, which does suggest that the more units
             a class is, the more time youʼd need to spend on it. Since itʼs only
@@ -1648,7 +1651,7 @@ export default function CollegeProductivity() {
 
         <p>
           These results display only a 2-way relationship between factors and
-          grades. Again,{}
+          grades. Again,{` `}
           <strong>all of these factors impact the final grades.</strong> All I
           can do is isolate the findings and compare them against each other.
         </p>
@@ -1676,7 +1679,7 @@ export default function CollegeProductivity() {
           </li>
           <li>
             <strong>Confidence is important for successful academics.</strong>
-            {}
+            {` `}
             When you’re nervous about a class and prepare in advance, being able
             to stand on equal footing as other classmates and feeling confident
             about your progress and achievement is half the battle. Do as much
@@ -1690,7 +1693,7 @@ export default function CollegeProductivity() {
               performance on it is surprisingly telling to how you will do in
               the class as a whole.
             </strong>
-            {}
+            {` `}
             Some classes use that result to curve your grade heavily, even if
             that assignment was only worth 10%. Do not underestimate it. For the
             most part, however, one assignment is not your whole grade, so do
@@ -1708,7 +1711,7 @@ export default function CollegeProductivity() {
               The time you spend studying and what you actually get at the end
               of the semester actually vary widely.
             </strong>
-            {}
+            {` `}
             Be sure to study until you understand the material, not bang your
             head against the wall and pretend to be studying (I promise, this
             doesn’t help).
@@ -1720,7 +1723,7 @@ export default function CollegeProductivity() {
               important to keep other factors such as sleep and studying
               consistent for there to produce good results.
             </strong>
-            {}
+            {` `}
             So definitely keep the first factors at moderation, and keep
             sleeping and studying normally.
           </li>
@@ -1729,7 +1732,7 @@ export default function CollegeProductivity() {
               Recording your assignment/test results and the averages of those
               help keep you on track to the grade you think you’d receive.
             </strong>
-            {}
+            {` `}
             It will also keep you from worrying about grade deflation.
           </li>
           <li>

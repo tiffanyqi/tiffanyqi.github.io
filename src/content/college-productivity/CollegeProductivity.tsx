@@ -88,8 +88,8 @@ export default function CollegeProductivity() {
           Google Calendar, then migrating the data onto a spreadsheet through a
           calculator application I built called{` `}
           <a href="https://github.com/tiffanyqi/calenTools">CalenTools</a> for
-          the command line. With this information, I thought it would be fun to
-          take all this data, analyze it, and make some conclusions about how
+          the command line. With this "information", I thought it would be fun
+          to take all this data, analyze it, and make some conclusions about how
           time management and grades all correlate using Google Charts.
         </p>
 

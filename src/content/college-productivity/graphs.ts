@@ -241,13 +241,10 @@ export function drawScatterChart({
   vAxisTitle: string;
   url: string;
 }) {
-  let trendlines = { "0": { showR2: "true", visibleInLegend: "true" } };
-  if (extraTrendline) {
-    trendlines = {
-      ...trendlines,
-      "1": extraTrendline,
-    };
-  }
+  let trendlines = {
+    "0": { showR2: "true", visibleInLegend: "true" },
+    ...(extraTrendline ? { "1": extraTrendline } : {}),
+  };
   const options = formatOptions({
     hAxisTitle,
     title,

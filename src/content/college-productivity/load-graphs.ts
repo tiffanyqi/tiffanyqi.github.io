@@ -25,7 +25,6 @@ export const loadGoogleCharts = () => {
 };
 
 const drawVisualization = () => {
-  // Use the global google.visualization object
   window.google.charts.load("current");
   window.google.charts.setOnLoadCallback(() => {
     // OVER TIME

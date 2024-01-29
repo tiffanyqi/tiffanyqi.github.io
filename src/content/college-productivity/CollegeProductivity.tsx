@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
 import { NextSeo } from "next-seo";
+import Image from "next/image";
 import { useEffect } from "react";
 
 import Dec15Calendar from "../../../public/img/dec15.png";
@@ -194,10 +195,12 @@ export default function CollegeProductivity() {
           at December 2015, which also happened to be the week of final exams.
         </p>
 
-        <img
+        <Image
           className={style.calendar}
           src={Oct14Calendar.src}
           alt="October 2014"
+          width={Oct14Calendar.width}
+          height={Oct14Calendar.height}
         />
         <p>
           You can see that each category is represented by a calendar of
@@ -231,10 +234,12 @@ export default function CollegeProductivity() {
           more than three years worth of quantifiable data on my productive (and
           not so productive) moments.
         </p>
-        <img
+        <Image
           className={style.calendar}
           src={Dec15Calendar.src}
           alt="December 2015"
+          width={Dec15Calendar.width}
+          height={Dec15Calendar.height}
         />
 
         <h3 id="about-terminology" className={style.heading}>

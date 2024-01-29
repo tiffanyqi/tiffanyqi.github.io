@@ -67,15 +67,15 @@ export default function EngineeringProgress() {
         <div className={style.date}>April 2019</div>
 
         <p>
-          I’ve officially been a software engineer at{" "}
+          I’ve officially been a software engineer at{` `}
           <a href="https://www.mixpanel.com">Mixpanel</a> for one year! For the
           full year, I’ve been tracking various time and Github data and I
           thought I’d share my results to start a conversation and be completely
           transparent about how engineers spend their time, and how some aspects
           of their code changes over time. You can skip the background and
-          methodology if you wish by going directly to the{" "}
+          methodology if you wish by going directly to the{` `}
           <a href="#data">Data</a> or the <a href="#findings">Findings</a>. You
-          can also check out another version of this post using{" "}
+          can also check out another version of this post using{` `}
           <a href="https://engineering.mixpanel.com/2019/07/10/a-study-in-a-mixpanel-engineers-engineering-progress/">
             Mixpanel insights
           </a>
@@ -94,9 +94,9 @@ export default function EngineeringProgress() {
           While at Mixpanel, I realized I wanted to work full time as a software
           engineer. In January 2018, I was the first to go through an official
           path to engineering, and in April 2018 I became a full fledged
-          software engineer. You can read about my full journey in{" "}
+          software engineer. You can read about my full journey in{` `}
           <a href="https://medium.com/@tiffanyqi/becoming-a-software-engineer-e6ac452aebca">
-            "Becoming a Software Engineer"
+            ”Becoming a Software Engineer”
           </a>
           .
         </p>
@@ -105,7 +105,7 @@ export default function EngineeringProgress() {
           method I used for 4 years, hacking things together until they worked,
           doesn’t work for people who have worked on a relatively stable and
           mature codebase and know how to best write software for that codebase.
-          I had to get rid of my JQuery habit, navigate{" "}
+          I had to get rid of my JQuery habit, navigate{` `}
           <a href="https://github.com/mixpanel/panel">Panel</a> (a Javascript
           framework built by Mixpanel) for our new features, and learn how to
           write clean code that others would approve of.
@@ -178,7 +178,7 @@ export default function EngineeringProgress() {
         <p>
           I calculated the time spent in hours by using Google Calendar and
           recorded the time in which I started and stopped working on a certain
-          PR. You can read more specifically on my method in my{" "}
+          PR. You can read more specifically on my method in my{` `}
           <a href="college-productivity">College Productivity Analysis</a>. I
           used a single calendar called “coding”, and each event title
           constituted a PR. I included the typing of code, research, and
@@ -288,7 +288,7 @@ export default function EngineeringProgress() {
         <p>
           Below, I’ll go into more of the specifics of each bullet point I was
           interested that was contained in the methodology. The following data
-          comes from{" "}
+          comes from{` `}
           <strong>
             275 workdays (14 months), 182 PRs, 8,305 unique lines of code, and
             1,271 comments
@@ -337,9 +337,9 @@ export default function EngineeringProgress() {
           [Average hours spent on pre-review and post-review per month graph]
         </div>
         <p>
-          Here's the same graph but instead broken up in chunks of 20 workday
+          Here’s the same graph but instead broken up in chunks of 20 workday
           cycles. Overall it follows the path as shown by the previous graph,
-          except it's more obvious where the peaks are. For example, the highest
+          except it’s more obvious where the peaks are. For example, the highest
           post-review period that overtook the pre-review in March 2018 was
           during Eng Path/KEEP. A second high post-review time was in August
           2018, which was during L1/D2.
@@ -365,16 +365,16 @@ export default function EngineeringProgress() {
           [Hours of pre-review vs. hours of post-review graph with no outliers]
         </div>
         <p>
-          Here's the same graph with the outliers removed. I define an outlier
+          Here’s the same graph with the outliers removed. I define an outlier
           through the interquartile ratio (IQR), the traditional way of
           calculating outliers. If any point is outside the lower and higher
           boundaries of the IQR*1.5 of Q1 and Q3, it is considered an outlier.
-          This means that I've removed any PR with a pre-review greater than
+          This means that I’ve removed any PR with a pre-review greater than
           12.6 hours and a post-review of 3.75 hours.
         </p>
         <p>
           With these outliers excluded, the data is much more scattered with a
-          coefficient of determination of 0.156. There's a weak positive
+          coefficient of determination of 0.156. There’s a weak positive
           correlation between pre-review and post-review hours spent on a PR.
         </p>
         <div className={style.graphShort} id="prpr-graph-max-hours">
@@ -393,7 +393,7 @@ export default function EngineeringProgress() {
         <p>
           Here’s a graph of the ratio between pre-review and post-review for
           every PR deployed in sequential order. If we drew a trendline for just
-          KEEP and D2, you'd notice that the treadline trends upwards,
+          KEEP and D2, you’d notice that the treadline trends upwards,
           suggesting an increasing pre-review ratio. As for AL, the line may be
           even, perhaps even trending downwards.
         </p>
@@ -411,7 +411,7 @@ export default function EngineeringProgress() {
           [Average review slices graph by month]
         </div>
         <p>
-          Here's the same graph broken up by 20 workday cycles. Here we can see
+          Here’s the same graph broken up by 20 workday cycles. Here we can see
           a clear delineation whenever a new period or project was started. In
           June 2018, I began D2, and continued to rise until the start of a new
           project in December 2018. From there, my ratio dropped to an average
@@ -460,14 +460,14 @@ export default function EngineeringProgress() {
           Support, which explains why I spent 1.23 hours per day during Eng
           Path/SRFE, but I must have focused more of my energy on engineering to
           have achieved an average of 4.24 hours during Eng Path/KEEP. Gradually
-          I've increased the time spent on PRs, although the time in L2/AL is
+          I’ve increased the time spent on PRs, although the time in L2/AL is
           below trend.
         </p>
         <div className={style.graphShort} id="time-graph-month-av-hours-coding">
           [average hours coding per day graph by month]
         </div>
         <p>
-          Here's the same graph broken out up 20 workday cycles. Interestingly,
+          Here’s the same graph broken out up 20 workday cycles. Interestingly,
           the same logic earlier applies to here: the start of a project shows a
           trough in time spent coding (July and December 2018), and then
           gradually increases. This could also be explained by the holiday
@@ -547,7 +547,7 @@ export default function EngineeringProgress() {
           [average comments per pr graph by month]
         </div>
         <p>
-          Here is the same graph broken up by 20 weekday periods. Again, it's
+          Here is the same graph broken up by 20 weekday periods. Again, it’s
           clear that the average comments decrease within projects.
           Interestingly there are more comments in July and August 2018, and in
           AL (December 2018 to March 2019) the comments continue to increase.
@@ -559,7 +559,7 @@ export default function EngineeringProgress() {
           [average hours worked in PR vs average comments per pr graph by month]
         </div>
         <p>
-          Out of curiosity, here's the plot between the average hours worked in
+          Out of curiosity, here’s the plot between the average hours worked in
           PR and average comments per PR broken up by 20 weekday periods. The
           correlation of determination is 0.682, which suggests that the data is
           strongly positively linearly correlated.
@@ -586,8 +586,8 @@ export default function EngineeringProgress() {
           [hours worked vs comments graph without outliers]
         </div>
         <p>
-          Here's the same graph with the outliers removed. I've removed any PR
-          with total hours worked that's more than 16 hours and more than 21
+          Here’s the same graph with the outliers removed. I’ve removed any PR
+          with total hours worked that’s more than 16 hours and more than 21
           comments. The coefficient of determination again has decreased to
           0.363, which still suggests a bit of a positive linear correlation but
           definitely not as strong as with the outliers.
@@ -618,7 +618,7 @@ export default function EngineeringProgress() {
           [pr every x day graph by month]
         </div>
         <p>
-          Here's the same graph broken out up 20 workday cycles. This graph
+          Here’s the same graph broken out up 20 workday cycles. This graph
           looks almost just like the comments graph, as the cadence decrease
           within projects but that it takes longer to deploy in July and August
           2018 and in AL (December 2018 to March 2019).
@@ -633,7 +633,7 @@ export default function EngineeringProgress() {
           Since the cadence graph and the comments graph broken up by 20 workday
           cycles looked so similar, I wanted to see what they look like
           together. The coefficient of determination is 0.259, which is
-          considered weak. But, I'm not convinced.
+          considered weak. But, I’m not convinced.
         </p>
         <div
           className={style.graphShort}
@@ -642,7 +642,7 @@ export default function EngineeringProgress() {
           [pr every x day vs comments graph by month without outliers]
         </div>
         <p>
-          Here's the graph again without the January 2018 data point of 1.5
+          Here’s the graph again without the January 2018 data point of 1.5
           comments. The coefficient of determination is 0.931, which suggests
           that the number of comments and the larger the PR averaged out within
           a month is strongly positively correlated.
@@ -660,7 +660,7 @@ export default function EngineeringProgress() {
           fewer large PRs over time. In addition, the cadence between PRs and
           the number of comments within that PR are strongly positively
           correlated, which makes sense because the more comments left, the
-          longer it takes to correct and deploy the PR. I've also coded more in
+          longer it takes to correct and deploy the PR. I’ve also coded more in
           Panel and less in Backbone.
         </p>
 
@@ -676,7 +676,7 @@ export default function EngineeringProgress() {
           removed, since removed code is also considered productive (if not
           better than adding code), however this would mean that lines with even
           the most miniscule changes (such as tabs) would count as double, which
-          I don't believe should be considered productive. Thus, I figured
+          I don’t believe should be considered productive. Thus, I figured
           subtracting the two would be sufficient.
         </p>
         <p>
@@ -758,7 +758,7 @@ export default function EngineeringProgress() {
           outliers]
         </div>
         <p>
-          Here's the same graph with the outliers removed. Outliers are defined
+          Here’s the same graph with the outliers removed. Outliers are defined
           as the number of hours worked are above 16 and code added is fewer
           than -66 and more than 114. The coefficient of determination is 0.409,
           which suggests that the total hours worked per PR and the amount of
@@ -799,7 +799,7 @@ export default function EngineeringProgress() {
 
         <h2 id="findings">Findings</h2>
         <p>
-          <strong>Did I improve?</strong> Probably. It's clear that there are
+          <strong>Did I improve?</strong> Probably. It’s clear that there are
           fewer comments, more PRs deployed, and a higher ratio of pre-review to
           post-review in general and within projects, which does appear to be
           closer to the LGTM state. There were some fluctuations in accordance
@@ -807,35 +807,38 @@ export default function EngineeringProgress() {
         </p>
         <p>
           <strong>
-            Starting new projects at first will look less productive than usual.{" "}
+            Starting new projects at first will look less productive than usual.
+            {` `}
           </strong>
           When I start a project, within that month I average more comments per
           PR, less time spent, a lower pre-review ratio, and less code added to
           production. While correlation does not imply causation, perhaps this
-          is because I'm researching or still figuring things out, which leads
+          is because I’m researching or still figuring things out, which leads
           to PRs that have more comments and more non-PR work. However, over
-          time when I'm in the zone or know what's going on, these numbers all
+          time when I’m in the zone or know what’s going on, these numbers all
           trend towards the positive.
         </p>
         <p>
           <strong>
-            There's a weak positive correlation between hours of pre-review and
+            There’s a weak positive correlation between hours of pre-review and
             post-review per PR.
-          </strong>{" "}
+          </strong>
+          {` `}
           Just because I spend more time on a PR before submitting for review
-          doesn't necessarily mean that that PR will have a lower post-review
+          doesn’t necessarily mean that that PR will have a lower post-review
           time.
         </p>
         <p>
           <strong>
-            "Simple PRs" get code out faster, but that doesn't necessarily mean
-            "small PRs".
-          </strong>{" "}
+            ”Simple PRs” get code out faster, but that doesn’t necessarily mean
+            ”small PRs”.
+          </strong>
+          {` `}
           When we look at the raw numbers rather than the averages by month from
           the above, the correlations between these amount of comments, lines of
           code, and hours spent per PR are weak to moderate at best, which
-          suggests that it's hard to define quantitatively what it means for a
-          PR to be "simple". However, there's a higher chance of simplicity if
+          suggests that it’s hard to define quantitatively what it means for a
+          PR to be ”simple”. However, there’s a higher chance of simplicity if
           we break PRs up into smaller chunks, which allows reviewers to
           understand a larger whole piece by piece and catch things that might
           have otherwise be missed on a larger PR. This is a common practice at
@@ -845,7 +848,8 @@ export default function EngineeringProgress() {
           <strong>
             As a full time engineer, I spent on average 5.85 hours per day on
             work and 5 hours on PRs for the past year.
-          </strong>{" "}
+          </strong>
+          {` `}
           This means in a typical eight hour day, 73% of time is spent on work
           and 62% of time is spent on coding. For the past project, these
           numbers were 5.98 hours on work (meetings, code review, deploying,
@@ -860,7 +864,8 @@ export default function EngineeringProgress() {
           <strong>
             If you’re honest with yourself, you don’t spend as much time as you
             think.
-          </strong>{" "}
+          </strong>
+          {` `}
           Yes, on average 4-5 hours of coding per day and 5.85-6 hours per day
           working (excluding some factors that have fell through the cracks as
           mentioned above) is less than 8 hours. However, is it really possible
@@ -929,9 +934,9 @@ export default function EngineeringProgress() {
 
         <h2 id="conclusion">Conclusion</h2>
         <p>
-          I've learned a lot about software engineering over the past year, and
-          there's always more to learn. I definitely have a long way to go
-          before I can create a significant PR with LGTM, but for now I'm
+          I’ve learned a lot about software engineering over the past year, and
+          there’s always more to learn. I definitely have a long way to go
+          before I can create a significant PR with LGTM, but for now I’m
           pleased with the fact that there is progress.
         </p>
         <p>
@@ -959,7 +964,7 @@ export default function EngineeringProgress() {
           </li>
         </ol>
         <p>
-          What do you think about the data and the conclusions I've presented
+          What do you think about the data and the conclusions I’ve presented
           there? How would you track progress? I hope the article inspires
           someone out there to track their data and draw more conclusions that
           can help the engineering community.
@@ -994,13 +999,13 @@ export default function EngineeringProgress() {
           never give up.
         </p>
         <p>
-          Thank you to everyone who read and shared{" "}
+          Thank you to everyone who read and shared{` `}
           <a href="https://hackernoon.com/a-college-students-individual-analysis-of-productivity-of-four-years-e51e5ec3af6">
             “A college student’s individual analysis of productivity of four
             years”
-          </a>{" "}
-          I wrote in 2016, which gave me the confidence to continue to create
-          crazy projects like this.
+          </a>
+          {` `}I wrote in 2016, which gave me the confidence to continue to
+          create crazy projects like this.
         </p>
         <p>
           Thank you to my parents for putting up with me and supporting my

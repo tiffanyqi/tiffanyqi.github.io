@@ -1,4 +1,4 @@
-import "../../types.d.ts";
+import "./types.d.ts";
 
 type ChartType =
   | "AreaChart"

@@ -3,7 +3,7 @@ import {
   drawColumnChart,
   drawLineChart,
   drawScatterChart,
-} from "./graphs";
+} from "../../graphs";
 
 import "../../types.d.ts";
 
